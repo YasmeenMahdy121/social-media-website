@@ -1,0 +1,148 @@
+$box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(01 0 0 / 19%);
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+  background-color: #4d636f;
+  .navbar-brand{
+    background-color: #3a4b53;
+  }
+  .my-dropdown::after{
+    display: none;
+  }
+  .nav-item{
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 0 15px;
+    &:hover{
+      transition: .3s;
+      background-color: whitesmoke;
+    }
+    &.dropdown{
+      .message-badge{
+        top: 0;
+        left: 30px;
+        @media screen and (max-width:991px){
+          left: 20px;
+        }
+      }
+      &:hover{
+        .myDropdown{
+          display: block;
+          box-shadow:$box-shadow;
+        }
+      }
+    }
+  }
+  .nav-avatar{
+    width: 35px;
+  }
+}
+.main-container{
+  width: 95%;
+  margin: 60px auto;
+  // start left side
+  .left-side{
+    .card-1{
+      box-shadow:$box-shadow;
+      img{
+        width: 100px;
+      }
+      i{
+        color: #607d8b;
+      }
+    }
+    .card-2{
+      box-shadow:$box-shadow;
+      background-color: #7d97a5;
+      li:hover{
+        transition: .3s;
+        cursor: pointer;
+        background-color: #cccccc;
+        color: #111;
+      }
+    }
+    .card-3{
+      box-shadow:$box-shadow;
+      li{
+        background-color: #3a4b53;
+        padding: 0 5px;
+        color: white;
+        font-size: 15px;
+      }
+    }
+    .alert{
+      p{
+        font-size: 14px;
+      }
+      .btn-close{
+        background-color: #8ea1ac;
+      }
+    }
+  }// end left side
+  // start center side
+  .center-side{
+    .create-post{
+      box-shadow: $box-shadow;
+      .post-content{
+        padding: 5px 10px;
+        border: 1px solid rgb(185, 185, 185);
+        border-radius: 3px;
+        font-size: 15px;
+        color: gray;
+      }
+      button{
+        background-color: #4d636f;
+        color: white;
+        width: fit-content;
+        &:hover{
+          background-color: #728996;
+        }
+      }
+    }
+    .post{
+      box-shadow: $box-shadow;
+      .post-header{
+        img{
+          width: 60px;
+        }
+      }
+      p{
+        font-size: 15px;
+        color: rgb(82, 82, 82);
+      }
+      button{
+        background-color: #4d636f;
+        color: white;
+        width: fit-content;
+        &:hover{
+          background-color: #728996;
+        }
+      }
+    }
+  }// end center side
+  // start right side
+  .right-side{
+    .card{
+      box-shadow: $box-shadow;
+    }
+    .card-1{
+      button{
+        width: 100%;
+        background-color: #dfe5e8;
+        &:hover{
+          background-color: #c1c5c7;
+        }
+      }
+    }
+  }// end right side
+}
+// footer
+footer{
+  background-color: #303e45;
+  font-size: 15px;
+  .footer{
+    font-size: 20px;
+    background-color: #4d636f;
+  }
+}
